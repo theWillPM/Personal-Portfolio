@@ -1,4 +1,4 @@
-# Personal-Portfolio-CollegeAssignment
+# Personal-Portfolio
 
 This is my personal portfolio webpage.
 It is a work in progress.
