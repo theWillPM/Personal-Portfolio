@@ -1,130 +1,65 @@
 <!--
 /********************************************************
- *  @Author:        Willian Pereira Munhoz              *
- *  @StudentId:     437831                              *
+ *  @Author:        Will P. M.                          *
  *  @GitHub:        theWillPM                           *
- *  @Class:         TECH1101 - Web fundamentals         *
- *  @Instructor:    Joe Wilson                          *
- *  @Institution:   Bow Valley College                  *
  *  @DateCreated:   September 26, 2022                  *
- *  @LastEdited:    October 10, 2022                     *
- *  @Title:         Assignment_1_SoftwarePortfolio      *
+ *  @LastEdited:    October 10, 2022                    *
  ********************************************************/-->
 
- <!DOCTYPE html>
-  
-    <head> 
-        <title id="title">My Software Developer Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
+<!DOCTYPE html>
 
-        <!-- Adding a little bit of SEO info -->
-        <meta name="keywords" content="Portfolio, HTML, CSS, Javascript, Software Developer">
-        <meta name="author" content="Willian Pereira Munhoz">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
- 
-    <header class="header">
-        <a id ="top"><h1>My Personal Portfolio</h1><br></a>
-        <div class="header"><h2 class="subheading">Willian P. Munhoz - Software Developer</h2></div>
-    </header>
- 
+<head>
+    <meta charset="UTF-8">
+    <title id="title">My Software Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
- <body class="body">
+    <!-- Adding a little bit of SEO info -->
+    <meta name="title" content="Willian P. Munhoz Portfolio - Software Developer">
+    <meta name="keywords" content="Portfolio, HTML, CSS, Javascript, Software Developer">
+    <meta name="author" content="Willian Pereira Munhoz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    <nav id="back-to-top-button">
-        <a href="#top"><span id="floating-nav">^ Top</span></a>
-    </nav>
-
-    <main class="main">
-        <nav id="nav">
-            <div class="navbar" id="tab6">
-                <h3>Home</h3>
+<body>
+    <header>
+        <div class="transparent-div header-main">
+            <div class="header-div subheading">
+            <h1 class="header-text">Will P. M.</h1>
+            <h3 class="header-caption">Software Developer</h3>
             </div>
-            <div class="navbar" id="tab1">
-                <h3>HTML</h3>
+            <div class="header-div">
             </div>
-            <div class="navbar" id="tab2">
-                <h3>CSS</h3>
+            <div class="header-div">
+
             </div>
-            <div class="navbar" id="tab3">
-                <h3>C++</h3>
-            </div>
-            <div class="navbar" id="tab4">
-                <h3>JAVA</h3>
-            </div>
-            <div class="navbar" id="tab5">
-                <h3>Games</h3> 
-            </div>
-        </nav>
-
-
-        <div class="mainContent" id="about">
-
-            <h3 id="aboutMe">About Me:</h3>
-
-            <p class="mainText">Hello! My name is Willian and I'm super excited to be a part of the software development world! I've always liked programming since my first HTML class in 1998. I'm a very dedicated individual, straight-A student (Aiming for a 4.0 GPA), and I always go the extra mile. Well, if I only did what was asked of me, how would I be different from anyone else?</p>
-
-            <p class="mainText">I've set aside my Civil Engineering career in Brazil to become a Software Developer in Canada. I figured it would be a great place to study programming. After all, Calgary is the birthplace of James Gosling, the inventor of Java.</p>
-
-            <p class="mainText">I am fascinated by how much programming languages have evolved in the past two decades. How much easier it has become to dive into the programming world! I really admire those who dared to start in this field 10 or 20 years ago. Bravo!</p>
-
-            <p class="mainText">I began studying programming one year before coming to Canada. From logics to C++, Java, Javascript, HTML and then some game designing courses.  I drew all the gifs you see here myself and they'll be part of my game called "Project Chiara". I'll most likely rename it to Chiara Chronicles. It has a nicer ring to it, doesn't it?</p>
-
-            <div id="hoverSurprise"><span>Do more. Be more!</span></div>
         </div>
-        <div class="mainContent" id="skillset">
-            <div class="list">
-                <ul>Programming languages:
-                    <li>HTML</li>
-                    <li>JAVA</li>
-                    <li>Javascript</li>
-                    <li>C++</li>
-                    <li>CSS</li>
-                </ul>   
-            </div> 
-            <div class="list">
-                <ul>More softwares:
-                    <li>AutoCAD / General CAD software</li>
-                    <li>VS Code, Eclipse</li>
-                    <li>DaVinci Resolve, StreamLabs</li>
-                    <li>GitHub</li>
-                    <li>GIMP</li>
-                </ul>     
-            </div>    
-            <div class="list">
-                <ul>Other skills:
-                    <li>Object Oriented Programming</li>
-                    <li>BIM technologies</li>
-                    <li>Network Troubleshooting</li>
-                    <li>MS Teams, Discord, etc.</li>
-                    <li>Easy to reach, quick responses.</li>
-                </ul>     
-            </div>   
-            <figure class="list" id="profileWrapper">
-                <img src="./img/Profile.jpg" id="profilePic" alt="Willian's profile picture.";>
-                <figcaption id="caption">Willian P. Munhoz<br>Software Developer</figcaption>
-            </figure> 
+    </header>
+    <main>
+        <div class="divider"></div>
+
+        <div class="main-content">
+            <h2 class="title">I'm WILL. <br>A Software Developer based in Calgary, Alberta. <img src="./img/canada.PNG" alt="Canadian Flag." id="canada-flag"></h2>
+            <p>I have a great passion for coding and I'm probably the most dedicated professional you will ever work with.</p>
+        </div>
+        <div class="photo-container">
+            <figure>
+                <img src="./img/portrait.PNG" alt="An AI-generated portrait of Willian" class="photo">
+            </figure>
+
         </div>
 
     </main>
-    <footer class="footer">
 
-        <div class="footerDiv" id="Git">
-            <span id="gitText">My GitHub Profile!</span>
-            <a href="https://github.com/theWillPM">
-            <img class="footerImg" id="githubImg" src="./img/GitHub_Logo_White.png"></a>
+    <footer>
+        <div class="credits">
+            @2023 by Willian P. Munhoz
         </div>
-
-        <div class="footerDiv">
-            <img id="santa" src="./img/Santa_attack.gif">
+        <div class="socials">
+            <a href="https://github.com/theWillPM"><img src="./img/GitHub_Logo_White.png" alt="GitHub logo." class="social-logo" id="github-logo"></a>
+            <a href="https://www.linkedin.com/in/willian-pereira-munhoz"><img src="./img/Linked.png" alt="LinkedIn logo." class="social-logo" id="linkedin-logo"></a>
         </div>
-        <div class="footerDiv"><img id="chiaraWalk" src="./img/Chiara_walk_HiRes.gif" alt="A pixelated character of a litle girl, wearing blue and pink.";><p class="footerImg">Hover!</p></div>
-        <div class="footerDiv"></div>
-        <div class="footerDiv"><p class="footerImg" style="font-size: 0.75em; margin-top: 10%">2022 Website by Willian P. Munhoz</p></div>
-        <div class="footerDiv"></div>
-            
-        </footer>  
- </body>
+    </footer>
 
- </html>
+</body>
+
+</html>
