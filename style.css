@@ -101,6 +101,29 @@ main {
     height: 16px;
     width: 30px;
 }
+
+.about {
+    font-size: 1.2rem;
+    margin: 0;
+    font-style: italic;
+    text-decoration: underline;
+    align-self: flex-end;
+    padding-right: 100px;
+}
+
+.hello {
+    /* display: none; */
+    position: absolute;
+    bottom: clamp(30%, 20vw, 50%);
+    left: clamp(100px, 10vw, 200px);
+}
+
+#hello {
+    display: flex;
+    height: clamp(18px, 2vw, 36px);
+
+}
+
 .photo-container {
     display: flex;
     position: absolute;
