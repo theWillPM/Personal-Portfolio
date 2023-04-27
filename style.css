@@ -29,7 +29,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: linear-gradient(90deg, black, var(--color-5));
+    background-image: linear-gradient(60deg, black 10%, #6773ae);
     position: relative;
 }
 
@@ -39,7 +39,7 @@ header {
 
 .subheading {
     display: flex;
-    width: clamp(300px, 25vw, 400px);
+    width: 25vw;
     height: 100px;
     background: none;
     flex-direction: column;
@@ -51,13 +51,15 @@ header {
 .subheading h2 {
     color: white;
     z-index: 2;
+    font-size: clamp(1.2rem, 3vw, 2rem);
 
 }
 
 .subheading h3 {
-    transform: translate(100px);
+    transform: translate(clamp(60px, 15vw, 140px));
     z-index: 1;
     color: #fd8;
+    font-size: clamp(1rem, 3vw, 1.6rem);
     font-style: italic;
 }
 
@@ -65,12 +67,33 @@ h1, h2, h3 {
     margin: 0;
 }
 
-.title {
-
-}
 main {
     position: relative;
     height: clamp(500px, 88vh, 1000px);   
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding-right: 50px;
+    gap: 10px;
+}
+
+.nav-button {
+    display: flex;
+    transition: 0.4s;
+    height: 20px;
+    border-radius: 6px;
+    padding: 2px 12px;
+}
+
+.nav-button:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    color: #FFc688;
+    text-shadow: 3px 3px 5px black;
 }
 
 .divider {
@@ -78,8 +101,8 @@ main {
     top: 60px;
     right: 0;
     border-radius: 2px 10px;
-    background-image: linear-gradient(90deg, black, white);
-    width: 75vw;
+    background-image: linear-gradient(90deg, black, #788ab8);
+    width: 100vw;
     height: 1px;
 }
 
@@ -87,7 +110,7 @@ main {
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 0 clamp(5px, 10vw, 400px) 0 25px;
+    padding: 0 clamp(5px, 10vw, 400px) 0 34px;
     right: 0;
     top: 100px;
 }
@@ -112,7 +135,6 @@ main {
 }
 
 .hello {
-    /* display: none; */
     position: absolute;
     bottom: clamp(30%, 20vw, 50%);
     left: clamp(100px, 10vw, 200px);
@@ -139,7 +161,7 @@ figure {
     width: clamp(200px, 20vw, 400px);
     z-index: 0;
     transform: scaleX(-1);
-    filter: drop-shadow(5px 5px 26px #FD8);
+    filter: drop-shadow(5px 5px 12px #FD8);
 }
 
 footer {
