@@ -3,23 +3,7 @@
  *  @Author:        Will P. M.                          *
  *  @GitHub:        theWillPM                           *
  *  @DateCreated:   September 26, 2022                  *
- *  @LastEdited:    October 10, 2022                    *
  ********************************************************/
-
-:root {
-    --color-1: #cccccc;
-    --color-2: #aaaaaa;
-    --color-3: #888888;
-    --color-4: #666666;
-    --color-5: #444444;
-    --color-6: #2d2884;
-    --color-7: #0b0b0b;
-    --color-blue: #1f6cbe;
-    --color-red: #be1f1f;
-    --color-pink: #be1fab;
-    --color-green: #1fbe71;
-    --color-gold: #e5c50d;
-}
 
 * {
     font-family:Tahoma, Geneva, Verdana, sans-serif;
@@ -69,7 +53,7 @@ h1, h2, h3 {
 
 main {
     position: relative;
-    height: 88vh;   
+    height: clamp(calc(94vh - 40px), 94vh, calc(94vh - 100px));
 }
 
 nav {
@@ -118,6 +102,7 @@ nav {
 .main-content p {
     color: #FFF;
     line-height: 1.5rem;
+    z-index: 2;
 }
 
 #canada-flag {
@@ -147,18 +132,18 @@ nav {
 }
 
 .photo-container {
-    display: flex;
     position: absolute;
     bottom: 0;
 }
 
 figure {
     margin: 0;
-    display: flex;
 }
 
 .photo {
-    width: clamp(200px, 20vw, 400px);
+    position: absolute;
+    bottom: 0;
+    width: clamp(150px, 20vw, 400px);
     z-index: 0;
     transform: scaleX(-1);
     filter: drop-shadow(5px 5px 12px #FD8);
@@ -169,7 +154,7 @@ footer {
     position: absolute;
     bottom: 0;
     min-width: 100vw;
-    background-color: var(--color-7);
+    background-color: #121212;
     height: clamp(40px, 6vh, 100px);
     align-items: center;
     justify-content: space-between;
@@ -205,20 +190,21 @@ padding-right: 10px;
 @media screen and (max-width: 500px) {
     .subheading h1,
     .subheading h2 {
-    color: white;
-    z-index: 2;
-    font-size: clamp(1rem, 3vw, 2rem);
-    transform: translate(0, -30px);
-
+        color: white;
+        z-index: 2;
+        font-size: clamp(1rem, 3vw, 2rem);
+        position: absolute;
+        top: 10px;
 }
 
 .subheading h3 {
-    transform: translate(clamp(60px, 15vw, 140px), -10px);
+    position: absolute;
+    top: 45px;
     z-index: 1;
     color: #FFc688;
     font-size: clamp(1rem, 3vw, 1.6rem);
     font-style: italic;
-}
+    }
 
     nav {
         top: -30px;
@@ -228,8 +214,8 @@ padding-right: 10px;
     }
 
     .hello {
-        left: 20px;
-        bottom: 40%;
+        left: 120px;
+        bottom: 50px;
     }
 }
 
@@ -246,5 +232,20 @@ padding-right: 10px;
 
     .hello {
         bottom: clamp(200px, 40vh, 400px);
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .main-content {
+        top: 70px;
+    }
+    
+    .title {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    .main-content p {
+        font-size: 0.7rem;
     }
 }
