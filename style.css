@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    height: clamp(40px, 6vh, 100px);   
+    height: 6vh;   
 }
 
 .subheading {
@@ -58,7 +58,7 @@ header {
 .subheading h3 {
     transform: translate(clamp(60px, 15vw, 140px));
     z-index: 1;
-    color: #fd8;
+    color: #FFc688;
     font-size: clamp(1rem, 3vw, 1.6rem);
     font-style: italic;
 }
@@ -69,7 +69,7 @@ h1, h2, h3 {
 
 main {
     position: relative;
-    height: clamp(500px, 88vh, 1000px);   
+    height: 88vh;   
 }
 
 nav {
@@ -135,13 +135,13 @@ nav {
 }
 
 .hello {
+    z-index: 3;
     position: absolute;
     bottom: clamp(30%, 20vw, 50%);
     left: clamp(100px, 10vw, 200px);
 }
 
 #hello {
-    display: flex;
     height: clamp(18px, 2vw, 36px);
 
 }
@@ -170,7 +170,7 @@ footer {
     bottom: 0;
     min-width: 100vw;
     background-color: var(--color-7);
-    height: clamp(40px, 6vh, 100px);
+    height: 6vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -200,4 +200,13 @@ padding-right: 10px;
 #github-logo:hover {
     border-radius: 10%;
     transition: 0.4s;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        top: -30px;
+        padding-right: 30px;
+        gap: 5px;
+        flex-direction: column;
+    }
 }
