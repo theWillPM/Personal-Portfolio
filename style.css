@@ -213,7 +213,7 @@ padding-right: 10px;
 }
 
 .subheading h3 {
-    transform: translate(clamp(60px, 15vw, 140px));
+    transform: translate(clamp(60px, 15vw, 140px), -10px);
     z-index: 1;
     color: #FFc688;
     font-size: clamp(1rem, 3vw, 1.6rem);
