@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    height: 6vh;   
+    height: clamp(40px, 6vh, 100px);  
 }
 
 .subheading {
@@ -51,7 +51,7 @@ header {
 .subheading h2 {
     color: white;
     z-index: 2;
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2rem);
 
 }
 
@@ -170,7 +170,7 @@ footer {
     bottom: 0;
     min-width: 100vw;
     background-color: var(--color-7);
-    height: 6vh;
+    height: clamp(40px, 6vh, 100px);
     align-items: center;
     justify-content: space-between;
 }
@@ -208,5 +208,26 @@ padding-right: 10px;
         padding-right: 30px;
         gap: 5px;
         flex-direction: column;
+    }
+
+    .hello {
+        left: 20px;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        margin-left: 15px;
+    }
+}
+
+@media (orientation: landscape) {
+    .main-content {
+        padding: 0 5px 0 40%;
+    }
+
+    .hello {
+        bottom: clamp(200px, 40vh, 400px);
     }
 }
